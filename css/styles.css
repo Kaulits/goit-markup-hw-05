@@ -116,7 +116,7 @@ body {
     background-color: var(--icons-bc-color);
     border-radius: 50%;
 
-   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 
@@ -187,7 +187,6 @@ fill: currentColor;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    position: relative;
 }
 
 
@@ -201,6 +200,7 @@ fill: currentColor;
 .nav-list {
     display: flex;
     gap: 40px;
+    position: relative;
   
 }
 
@@ -261,41 +261,24 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
-.actual-pseudo-studio::after {
+.actual-pseudo-page::after {
     content: '';
     border-radius: 2px;
-    background-color: var(--focus-color-customers);
+    color: #404bbf; 
+    background-color: #404bbf;
 
     width: 48px;
     height: 4px;
     flex-shrink: 0;
 
     display: block;
+    position: absolute;
+    left: 0;
+    bottom: -1px; 
 }
 
-.actual-pseudo-portfolio::after {
-    content: '';
-    border-radius: 2px;
-    background-color: var(--focus-color-customers);
 
-    width: 66px;
-    height: 4px;
-    flex-shrink: 0;
 
-    display: block;
-}
-
-.actual-pseudo-contact::after {
-    content: '';
-    border-radius: 2px;
-    background-color: var(--focus-color-customers);
-
-    width: 67px;
-    height: 4px;
-    flex-shrink: 0;
-
-    display: block;
-}
 
 
 /* ========/HEADER======== */
@@ -498,7 +481,7 @@ margin-bottom: 48px;
     margin-left: auto;
     margin-right: auto;
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -729,7 +712,7 @@ gap: 24px;
     border: 1px solid var(--customers-icons); 
     border-radius: 4px;
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-list {
